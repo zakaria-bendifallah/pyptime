@@ -3,24 +3,29 @@
     <meta content="text/html; charset=utf-8" http-equiv="content-type">
     <link rel="stylesheet" type="text/css" href="pstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Changa" rel="stylesheet">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <script type="text/javascript" src="my_js_code.js"></script>
     <title>مواقيت</title>
     <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; width=device-width;">
   </head>
   <body>
     <div class="summary-banner">
       <h3>مواقيت</h3>
+      <p id="current-date"> Todays date </p>
     </div>
 
     <div class="core-content">
       <div class="misc-content">
-         <div class="q-snippet">
-           <h3 class="verse-header">
-             آيات 
-           </h3>
+
+         <div class="q-snippet">           
+           <div class="verse-header">    
+             <h3 class="verse-header">آيات</h3>
+           </div>
            <p class="verse">
              {ولا تهنوا ولا تحزنوا وأنتم الأعلون إن كنتم مؤمنين}
            </p>
-         </div>  
+         </div>
+  
        </div> 
       <div class="prayer-tab">
        <table class="table-fill">
@@ -32,28 +37,28 @@
         </thead>
         <tbody class="table-hover">
           <tr>
-            <td class="text-left">04:01</td>
-            <td class="text-left">فجر</td>
+            <td class="text-left fajr">04:01</td>
+            <td class="text-left fajr">فجر</td>
           </tr>
           <tr>
-            <td class="text-left"> 05:48</td>
-            <td class="text-left"> شروق </td>
+            <td class="text-left shourouq"> 05:48</td>
+            <td class="text-left shourouq"> شروق </td>
           </tr>
           <tr>
-            <td class="text-left">13:57</td>
-            <td class="text-left">  ظهر </td>
+            <td class="text-left dhuhr">13:57</td>
+            <td class="text-left dhuhr">  ظهر </td>
           </tr>
-          <tr>
-            <td class="text-left">18:09</td>
+          <tr id="asr">
+            <td  class="text-left">18:09</td>
             <td class="text-left">عصر</td>
           </tr>
           <tr>
-            <td class="text-left">22:01</td>
-            <td class="text-left">مغرب</td>
+            <td class="text-left maghrib">22:01</td>
+            <td class="text-left maghrib">مغرب</td>
           </tr>
           <tr>
-            <td class="text-left">23:43</td>
-            <td class="text-left">عشاء</td>
+            <td class="text-left ishaa">23:43</td>
+            <td class="text-left ishaa">عشاء</td>
           </tr>
         </tbody>
       </table>
